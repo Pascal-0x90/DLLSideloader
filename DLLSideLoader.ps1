@@ -1,8 +1,8 @@
 #Ripped from https://alastaircrabtree.com/how-to-find-latest-version-of-msbuild-in-powershell/
 Function Find-MsBuild()
 {
-	$buildtoolspath32 = "${Env:ProgramFiles(x86)}\Microsoft Visual Studio\2019\BuildTools\MSBuild\Current\Bin\msbuild.exe"
-	$buildtoolspath64 = "${Env:ProgramFiles(x86)}\Microsoft Visual Studio\2019\BuildTools\MSBuild\Current\Bin\amd64\msbuild.exe"
+	$buildtoolspath32 = "${Env:ProgramFiles(x86)}\Microsoft Visual Studio\2019\Community\MSBuild\Current\Bin\msbuild.exe"
+	$buildtoolspath64 = "${Env:ProgramFiles(x86)}\Microsoft Visual Studio\2019\Community\MSBuild\Current\Bin\amd64\msbuild.exe"
 	
 	
 	If (Test-Path $buildtoolspath32) { return $buildtoolspath32 } 
